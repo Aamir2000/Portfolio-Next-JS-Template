@@ -1,0 +1,74 @@
+.app__skills {
+    .app__container {
+        @apply flex text-center items-center justify-center flex-col gap-5 px-7;
+        min-height: 100vh;
+
+        @media screen and (min-width: 680px) {
+            @apply px-8;
+        }
+
+        @media screen and (min-width: 960px) {
+            @apply px-8 text-start;
+        }
+    }
+
+    &__top {
+        @apply text-center;
+
+        h2 {
+            @apply text-3xl font-semibold;
+
+            @media screen and (min-width: 960px) {
+                line-height: 3.2rem;
+            }
+
+            span {
+                color: var(--primary);
+            }
+        }
+
+        p {
+            @apply max-w-xl mt-3 leading-6;
+
+            @media screen and (min-width: 680px) {
+                @apply text-lg leading-8;
+            }
+        }
+    }
+
+    &__bottom {
+        @apply w-full py-4;
+    }
+
+    &__wrapper {
+        @apply w-full h-full rounded-lg pt-10 flex gap-6 flex-wrap;
+    }
+
+    &__card {
+        @apply w-full shadow-md hover:shadow-lg transition-all cursor-pointer rounded-md px-4 py-8 flex-grow;
+        border: .5px solid var(--primary);
+
+        @media screen and (min-width: 680px) {
+            @apply w-4/12 px-8;
+        }
+
+        @media screen and (min-width: 960px) {
+            @apply w-3/12;
+        }
+
+        h3 {
+            @apply text-xl font-semibold;
+            color: var(--primary);
+            line-height: 2.1rem;
+        }
+
+        span {
+            @apply text-gray-500 text-sm;
+        }
+
+        p {
+            @apply mt-3;
+            line-height: 2rem;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+
+.app__hero {
+    .app__container {
+        @apply flex text-center items-center justify-center flex-col gap-5 py-4 px-7;
+        min-height: 78vh;
+
+        @media screen and (min-width: 680px) {
+            @apply px-8 py-12;
+        }
+
+        @media screen and (min-width: 960px) {
+            @apply px-8 py-12 text-start flex justify-between flex-row;
+        }
+    }
+
+    &__left {
+        h1 {
+            @apply text-3xl font-semibold mt-11;
+
+            @media screen and (min-width: 960px) {
+                @apply text-4xl;
+                line-height: 3.2rem;
+            }
+
+            span {
+                color: var(--primary);
+            }
+        }
+
+        p {
+            @apply max-w-xl mt-3 leading-6;
+
+            @media screen and (min-width: 680px) {
+                @apply text-lg leading-8;
+            }
+        }
+
+        button {
+            @apply px-4 py-2  rounded-md font-bold;
+            border-color: var(--primary);
+            color: var(--primary);
+            border-width: 3.4px;
+        }
+    }
+
+    &__right {
+        img {
+            @apply mt-8;
+            max-width: 300px;
+
+            @media screen and (min-width: 680px) {
+                @apply px-8 py-12;
+                max-width: unset;
+            }
+        }
+    }
+
+    &__cta__section {
+        @apply flex items-center mt-10 gap-4;
+        
+        @media screen and (max-width: 960px) {
+            @apply justify-center;
+        }
+
+        a {
+            color: var(--secondary);
+            margin-left: .6rem;
+        }
+    }
+}

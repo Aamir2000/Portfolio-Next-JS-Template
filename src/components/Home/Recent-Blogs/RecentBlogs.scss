@@ -1,0 +1,83 @@
+.app__recent__blogs {
+  .app__container {
+    @apply flex items-center justify-center flex-col gap-5 px-7;
+
+    @media screen and (min-width: 680px) {
+      @apply px-8;
+    }
+
+    @media screen and (min-width: 960px) {
+      @apply px-8 text-start;
+    }
+  }
+
+  &__top {
+    @apply text-center;
+
+    h2 {
+      @apply text-3xl font-semibold;
+
+      @media screen and (min-width: 960px) {
+        line-height: 3.2rem;
+      }
+
+      span {
+        color: var(--primary);
+      }
+    }
+
+    p {
+      @apply max-w-xl mt-3 leading-6;
+
+      @media screen and (min-width: 680px) {
+        @apply text-lg leading-8;
+      }
+    }
+  }
+
+  &__cards {
+    @apply w-full mt-14 flex gap-5 flex-wrap justify-around;
+  }
+
+  &__cta {
+    @apply mt-10;
+    button {
+      @apply px-4 py-2  rounded-md font-bold;
+      border-color: var(--primary);
+      color: var(--primary);
+      border-width: 3.4px;
+    }
+  }
+}
+
+.app__blog__card {
+  @apply shadow-md w-fit px-6 rounded-md;
+
+  &__image {
+    @apply flex justify-center items-center py-6;
+
+    img {
+      @apply rounded-xl;
+      max-width: 300px;
+      max-height: 200px;
+      min-width: 300px;
+      min-height: 200px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    @apply flex flex-col gap-2;
+    max-width: 300px;
+    h3 {
+      @apply text-xl font-semibold;
+      color: var(--primary);
+    }
+    p {
+      @apply text-gray-400;
+    }
+    a {
+      @apply text-blue-500 my-3;
+    }
+  }
+}

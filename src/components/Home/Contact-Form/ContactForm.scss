@@ -1,0 +1,77 @@
+.app__contact__form {
+  .app__container {
+    @apply flex items-center justify-center flex-col gap-5 px-7;
+
+    @media screen and (min-width: 680px) {
+      @apply px-8;
+    }
+
+    @media screen and (min-width: 960px) {
+      @apply px-8 text-start;
+    }
+  }
+
+  &__top {
+    @apply text-center;
+
+    h2 {
+      @apply text-3xl font-semibold;
+
+      @media screen and (min-width: 960px) {
+        line-height: 3.2rem;
+      }
+
+      span {
+        color: var(--primary);
+      }
+    }
+
+    p {
+      @apply max-w-xl mt-3 leading-6;
+
+      @media screen and (min-width: 680px) {
+        @apply text-lg leading-8;
+      }
+    }
+  }
+
+  &__wrapper {
+    @apply w-full mt-10 flex gap-10 flex-wrap justify-around;
+  }
+
+  &__section {
+    @apply flex flex-col gap-2 w-full md:w-4/12 lg:w-3/12 flex-grow;
+
+    sup {
+      @apply text-red-600 text-sm;
+    }
+  }
+
+  &__label {
+    @apply font-semibold;
+  }
+
+  &__input {
+    @apply px-4 py-3 bg-gray-100 rounded-md outline-0 text-sm;
+  }
+
+  &__cta {
+    @apply flex gap-4 mt-5 w-full;
+
+    button {
+      @apply px-6 py-2 rounded-md outline-0;
+
+      &:nth-child(1) {
+        background-color: var(--primary);
+        color: white;
+      }
+
+      &:nth-child(2) {
+        @apply font-semibold;
+        border-color: var(--primary);
+        color: var(--primary);
+        border-width: 3.4px;
+      }
+    }
+  }
+}

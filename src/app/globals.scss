@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("../../public/assets/icons/font-awe/css/all.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #555;
+  font-family: "Google Sans", sans-serif;
+}
+
+:root {
+  --primary: #00B86B;
+  --secondary: #444;
+}
+
+
+.app__container {
+  max-width: 1400px;
+  margin-inline: auto;
+  width: 100%;
+}

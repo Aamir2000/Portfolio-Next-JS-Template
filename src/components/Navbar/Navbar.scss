@@ -1,0 +1,181 @@
+.app__navbar {
+    .app__container {
+        @apply flex justify-between items-center py-4 px-7;
+        animation: slide-out 1s ease forwards;
+
+        @media screen and (min-width: 680px) {
+            @apply px-8 py-6;
+        }
+    }
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: rgba(0, 0, 0, .3);
+        min-width: 100vw;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+
+    &__left {}
+
+    &__right {
+        position: relative;
+    }
+
+    &__branding {
+        @apply font-semibold;
+        font-size: 1.5rem;
+
+        @media screen and (min-width: 820px) {
+            @apply text-2xl;
+        }
+
+        span {
+            color: var(--primary);
+        }
+    }
+
+    &__menuToggle {
+        font-size: 1.6rem;
+        z-index: 999;
+        position: relative;
+
+        @media screen and (min-width: 680px) {
+            @apply hidden;
+        }
+    }
+
+    &__menu {
+        @apply bg-gray-100 min-h-screen flex items-center;
+        display: none;
+        position: fixed;
+        right: -100%;
+        top: 0%;
+        z-index: 10;
+        min-width: 60%;
+        animation: slide-out 1s ease forwards;
+
+        @media screen and (min-width: 680px) {
+            background-color: unset;
+            display: block;
+            position: static;
+            min-height: unset;
+        }
+
+        ul {
+            @apply flex flex-col gap-4;
+
+            @media screen and (min-width: 680px) {
+                @apply flex-row gap-6 items-center;
+            }
+
+            @media screen and (min-width: 820px) {
+                @apply flex-row gap-8 items-center;
+            }
+
+            li {
+                @apply px-8 cursor-pointer w-fit;
+
+                @media screen and (min-width: 680px) {
+                    padding-inline: unset;
+                }
+
+                &:not(:last-of-type) {
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        height: 4px;
+                        background-color: transparent;
+                        display: block;
+                        margin-top: 2px;
+                        margin-bottom: -6px;
+                        transition: all ease 600ms;
+                    }
+
+                    &:hover {
+                        &::after {
+                            content: "";
+                            background-color: var(--primary);
+                            width: 100%;
+                            height: 4px;
+                            display: block;
+                            margin-top: 2px;
+                        }
+                    }
+                }
+
+                &.active {
+                    &::after {
+                        content: "";
+                        background-color: var(--primary);
+                        width: 100%;
+                        height: 4px;
+                        display: block;
+                        margin-top: 2px;
+                    }
+                }
+
+                &:last-child {
+                    @apply mt-2;
+
+                    @media screen and (min-width: 680px) {
+                        @apply mt-0
+                    }
+
+                    button {
+                        @apply px-4 py-2 rounded-md text-white w-full;
+                        background-color: var(--primary);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.app__navbar.active,
+.app__navbar.active .app__navbar__menu {
+    display: flex;
+    animation: slide-in 1s ease forwards;
+
+    &::before {
+        display: inline-block;
+        animation: fade-in 1s ease forwards;
+    }
+}
+
+
+
+@keyframes slide-in {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0%;
+    }
+}
+
+
+@keyframes slide-out {
+    from {
+        right: 0%;
+    }
+
+    to {
+        right: -100%;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
