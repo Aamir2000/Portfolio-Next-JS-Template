@@ -28,7 +28,6 @@ export default function Navbar() {
                             <Link href={"/about"}>
                                 <li className={path == "/about" ? 'active' : ""}>About Me</li>
                             </Link>
-                            <li>Projects</li>
                             <li>Blogs</li>
                             <li>Contact Me</li>
                             <li>
