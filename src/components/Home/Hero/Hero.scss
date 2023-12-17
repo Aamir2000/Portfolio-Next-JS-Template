@@ -1,15 +1,15 @@
 
 .app__hero {
     .app__container {
-        @apply flex text-center items-center justify-center flex-col gap-5 py-4 px-7;
-        min-height: 78vh;
+        @apply flex text-center items-center justify-center flex-col gap-5 pb-4 px-7;
+        min-height: 60vh;
 
         @media screen and (min-width: 680px) {
-            @apply px-8 py-12;
+            @apply px-8 pb-12;
         }
 
         @media screen and (min-width: 960px) {
-            @apply px-8 py-12 text-start flex justify-between flex-row;
+            @apply px-8 pb-12 text-start flex justify-between flex-row;
         }
     }
 

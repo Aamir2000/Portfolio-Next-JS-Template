@@ -1,6 +1,6 @@
 .app__recent__blogs {
   .app__container {
-    @apply flex items-center justify-center flex-col gap-5 px-7;
+    @apply flex items-center justify-center flex-col gap-5 px-4;
 
     @media screen and (min-width: 680px) {
       @apply px-8;
@@ -36,7 +36,7 @@
   }
 
   &__cards {
-    @apply w-full mt-14 flex gap-5 flex-wrap justify-around;
+    @apply w-full mt-14 px-2 flex gap-5 flex-wrap justify-around;
   }
 
   &__cta {
@@ -60,9 +60,8 @@
       @apply rounded-xl;
       max-width: 300px;
       max-height: 200px;
-      min-width: 300px;
-      min-height: 200px;
       object-fit: cover;
+      width: 100%;
     }
   }
 

@@ -1,7 +1,6 @@
 .app__skills {
     .app__container {
         @apply flex text-center items-center justify-center flex-col gap-5 px-7;
-        min-height: 100vh;
 
         @media screen and (min-width: 680px) {
             @apply px-8;

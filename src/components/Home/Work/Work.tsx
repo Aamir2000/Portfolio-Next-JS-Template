@@ -27,15 +27,7 @@ export default function Work() {
                         <Swiper
                             spaceBetween={200}
                             slidesPerView={1}
-                            effect='creative'
-                            creativeEffect={{
-                                prev: {
-                                    translate: [0, 0, -400],
-                                },
-                                next: {
-                                    translate: ['100%', 0, 0],
-                                },
-                            }}
+                            effect='slide'
                             autoplay={{
                                 delay: 2500,
                                 disableOnInteraction: true,
