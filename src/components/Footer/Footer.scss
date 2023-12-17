@@ -40,7 +40,7 @@
     }
 
     p {
-      @apply text-white text-sm mt-2;
+      @apply text-white text-sm mt-2 leading-7;
       max-width: 50ch;
     }
 
@@ -62,7 +62,7 @@
     }
 
     p {
-      @apply text-white mt-2 leading-8;
+      @apply text-white mt-2 leading-7;
     }
   }
 }

@@ -1,9 +1,12 @@
 "use client";
 import React, { useState } from 'react'
 import "./Navbar.scss"
+import {usePathname} from "next/navigation";
+import Link from "next/link";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const path = usePathname();
 
     return (
         <div className={`app__navbar ${isOpen ? 'active' : ''}`}>
@@ -19,8 +22,12 @@ export default function Navbar() {
                     </div>
                     <div className="app__navbar__menu">
                         <ul>
-                            <li className='active'>Home</li>
-                            <li>About Me</li>
+                            <Link href={"/"}>
+                                <li className={path == "/" ? 'active' : ""}>Home</li>
+                            </Link>
+                            <Link href={"/about"}>
+                                <li className={path == "/about" ? 'active' : ""}>About Me</li>
+                            </Link>
                             <li>Projects</li>
                             <li>Blogs</li>
                             <li>Contact Me</li>

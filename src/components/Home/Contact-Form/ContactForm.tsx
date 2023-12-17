@@ -24,12 +24,12 @@ export function ContactForm() {
                             <input type="text" id={'email'} className="app__contact__form__input" placeholder={'Enter Email Address'}/>
                         </section>
                         <section className="app__contact__form__section">
-                            <label htmlFor="name" className="app__contact__form__label">Phone</label>
-                            <input type="text" id={'name'} className="app__contact__form__input" placeholder={'Enter Full Name'}/>
+                            <label htmlFor="tel" className="app__contact__form__label">Phone</label>
+                            <input type="tel" id={'tel'} className="app__contact__form__input" placeholder={'Enter Phone'}/>
                         </section>
                         <section className="app__contact__form__section">
-                            <label htmlFor="name" className="app__contact__form__label">Message<sup>*</sup></label>
-                            <textarea id={'name'} rows={5} className="app__contact__form__input" placeholder={'Enter Full Name'}/>
+                            <label htmlFor="msg" className="app__contact__form__label">Message<sup>*</sup></label>
+                            <textarea id={'msg'} rows={5} className="app__contact__form__input" placeholder={'Enter Message'}/>
                         </section>
                     </form>
                     <div className="app__contact__form__cta">

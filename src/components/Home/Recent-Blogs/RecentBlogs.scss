@@ -76,7 +76,8 @@
       @apply text-gray-400;
     }
     a {
-      @apply text-blue-500 my-3;
+      @apply my-3;
+      color: var(--primary);
     }
   }
 }

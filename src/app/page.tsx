@@ -2,7 +2,7 @@
 
 import Hero from "@/components/Home/Hero/Hero";
 import Skills from "@/components/Home/Skills/Skills";
-import "./home.scss";
+import "../styles/home.scss";
 import Work from "@/components/Home/Work/Work";
 import Newsletter from "@/components/Home/Newsletter/Newsletter";
 import {RecentBlogs} from "@/components/Home/Recent-Blogs/RecentBlogs";

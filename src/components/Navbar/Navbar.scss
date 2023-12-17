@@ -109,6 +109,7 @@
                 }
 
                 &.active {
+                    font-weight: 600;
                     &::after {
                         content: "";
                         background-color: var(--primary);

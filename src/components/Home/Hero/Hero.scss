@@ -63,7 +63,8 @@
         }
 
         a {
-            color: var(--secondary);
+            @apply text-sm font-semibold;
+            color: var(--primary);
             margin-left: .6rem;
         }
     }
