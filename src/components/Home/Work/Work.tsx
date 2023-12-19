@@ -28,10 +28,6 @@ export default function Work() {
                             spaceBetween={200}
                             slidesPerView={1}
                             effect='slide'
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: true,
-                            }}
                             pagination={false}
                             modules={[EffectCreative, Pagination, Autoplay,]}
                             onSlideChange={() => console.log('slide change')}

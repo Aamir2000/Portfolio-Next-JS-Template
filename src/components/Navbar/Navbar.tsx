@@ -31,8 +31,8 @@ export default function Navbar() {
                             <Link href={"/blogs"}>
                                 <li className={path == "/blogs" ? 'active' : ""}>Blogs</li>
                             </Link>
-                            <Link href={"/"}>
-                                <li>Contact Me</li>
+                            <Link href={"/projects"}>
+                                <li className={path == "/projects" ? 'active' : ""}>Projects</li>
                             </Link>
                             <li>
                                 <button>Hire Me</button>

@@ -1,0 +1,58 @@
+.app__projects {
+  .app__container {
+    @apply items-center justify-center flex-col gap-5 px-7 py-5;
+
+    @media screen and (min-width: 680px) {
+      @apply px-8;
+    }
+
+    @media screen and (min-width: 960px) {
+      @apply px-8 text-start;
+    }
+  }
+
+  &__top {
+    margin-bottom: 3rem;
+
+    h2 {
+      @apply text-2xl font-semibold text-center;
+
+      @media screen and (min-width: 680px) {
+        @apply text-start;
+      }
+
+      @media screen and (min-width: 960px) {
+        line-height: 3.2rem;
+      }
+
+      span {
+        color: var(--primary);
+      }
+    }
+
+    p {
+      @apply max-w-lg mt-1 leading-7 text-center mx-auto;
+
+      @media screen and (min-width: 680px) {
+        @apply text-lg leading-7 text-start mx-0;
+      }
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+    justify-items: center;
+
+    @media screen and (max-width: 880px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width: 580px) {
+      justify-items: center;
+      grid-template-columns: 1fr;
+    }
+  }
+}

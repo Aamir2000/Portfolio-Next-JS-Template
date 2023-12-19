@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/blogs.scss";
-import BlogCard from "@/components/Blogs/BlogCard";
+import ImageCard from "@/components/Common/ImageCard";
 
 
 export default function Blogs() {
@@ -14,12 +14,12 @@ export default function Blogs() {
                     <p>I like writing blogs and document every step in my cyber security journey. Feel free to read and give me feedback on the documentation. I appreciate every feedback</p>
                 </div>
                 <div className="app__blogs__content">
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
-                    <BlogCard/>
+                    <ImageCard/>
+                    <ImageCard/>
+                    <ImageCard/>
+                    <ImageCard/>
+                    <ImageCard/>
+                    <ImageCard/>
                 </div>
             </div>
         </div>

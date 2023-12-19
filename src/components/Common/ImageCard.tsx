@@ -2,7 +2,7 @@ import "../../styles/blog-card.scss";
 import Image from "next/image";
 
 
-export default function BlogCard() {
+export default function ImageCard() {
     return (
         <div className="app__blogcard">
             <div className="app__blogcard__img">

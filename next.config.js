@@ -3,6 +3,7 @@ const nextConfig = {
     images: {
         loader: "custom",
         loaderFile: "./src/img-loader.ts",
+        unoptimized: true,
         domains: [
             "images.pexels.com"
         ]
