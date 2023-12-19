@@ -1,0 +1,30 @@
+.app__blogcard {
+
+
+  &__img {
+    img {
+      @apply rounded-2xl shadow;
+    }
+  }
+
+  &__content {
+    @apply py-5 px-2;
+
+    h4 {
+      @apply pb-2 text-xl font-semibold;
+      color: var(--primary);
+    }
+
+    p {
+      @apply pb-4;
+    }
+
+    button {
+      padding-inline: 1rem;
+      padding-block: .5rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 4rem;
+    }
+  }
+}
