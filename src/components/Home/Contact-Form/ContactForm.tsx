@@ -11,7 +11,7 @@ export function ContactForm() {
                         <h2>
                             My <span>Contact</span>
                         </h2>
-                        <p>Want to connect with me for work or just a talk? Fill your details here and I'll surely get
+                        <p>Want to connect with me for work or just a talk? Fill your details here and I&apos;ll surely get
                             in touch as soon as possible for me. Thanks for contacting me!</p>
                     </div>
                     <form action="#" className="app__contact__form__wrapper">

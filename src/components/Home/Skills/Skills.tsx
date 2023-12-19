@@ -9,14 +9,14 @@ export default function Skills() {
                     <h2>
                         My <span>Skills</span>
                     </h2>
-                    <p>I've gathered a lot of skills over the past few years of my career and I'd love to use my skills to solve problems that helps business and organisations grow</p>
+                    <p>I&apos;ve gathered a lot of skills over the past few years of my career and I&apos;d love to use my skills to solve problems that helps business and organisations grow</p>
                 </div>
                 <div className="app__skills__bottom">
                     <div className="app__skills__wrapper">
                         <div className="app__skills__card">
                             <h3>Linux / OpenSUE</h3>
                             <span>Experience: 1 Year</span>
-                            <p>I've worked extensively on Linux / OpenSue based systems. It helped me apply my knowledge on many different applications. I love working with Linux.</p>
+                            <p>I&apos;ve worked extensively on Linux / OpenSue based systems. It helped me apply my knowledge on many different applications. I love working with Linux.</p>
                         </div>
                         <div className="app__skills__card">
                             <h3>Networking</h3>

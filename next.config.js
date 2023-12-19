@@ -4,7 +4,8 @@ const nextConfig = {
         domains: [
             "images.pexels.com"
         ]
-    }
+    },
+    output: "export"
 }
 
 module.exports = nextConfig

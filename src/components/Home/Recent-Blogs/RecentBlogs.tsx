@@ -11,7 +11,7 @@ export function RecentBlogs() {
                         <h2>
                             My <span>Latest Blogs</span>
                         </h2>
-                        <p>I always loved sharing my knowledge with the world and in that mission of knowledge sharing. I've curated a bunch of blogs which you might useful do give these a try.</p>
+                        <p>I always loved sharing my knowledge with the world and in that mission of knowledge sharing. I&apos;ve curated a bunch of blogs which you might useful do give these a try.</p>
                     </div>
                     <div className="app__recent__blogs__cards">
                         <BlogCard></BlogCard>

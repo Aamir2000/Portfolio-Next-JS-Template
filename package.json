@@ -13,6 +13,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.69.0",
+    "sharp": "^0.33.1",
     "swiper": "^10.3.1"
   },
   "devDependencies": {

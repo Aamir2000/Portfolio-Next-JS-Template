@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="app__container">
                 <div className="app__hero__left">
                     <h1>
-                        Hi, I'm <span>Hummab</span> <br />
+                        Hi, I&apos;m <span>Hummab</span> <br />
                         Professional Cyber Security Expert
                     </h1>
                     <p>Hummab a relentless guardian of the digital realm. With a passion for puzzles and an unwavering commitment to safeguarding the online world from cyber attacks and online threats</p>

@@ -25,10 +25,10 @@ export function Footer() {
                             <br/>
                             <br/>
                             Thank you for visiting my portfolio! As I embark on my journey to become a Cybersecurity
-                            expert, my mission is not just about safeguarding data and systems; it's also about
+                            expert, my mission is not just about safeguarding data and systems; it&apos;s also about
                             empowering individuals and organizations to thrive in a digital world, free from the fear of
-                            cyber threats. I'm excited to contribute to a safer and more secure future for all.
-                            Together, let's build a resilient and protected online world.
+                            cyber threats. I&apos;m excited to contribute to a safer and more secure future for all.
+                            Together, let&apos;s build a resilient and protected online world.
                         </p>
                     </div>
                 </div>
