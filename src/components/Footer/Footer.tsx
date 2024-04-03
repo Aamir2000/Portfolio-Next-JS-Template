@@ -7,7 +7,7 @@ export function Footer() {
             <div className="app__footer">
                 <div className="app__container">
                     <div className="app__footer__left">
-                        <h3>Hummab <span>Rabbia</span></h3>
+                        <h3>H <span>Rabbia</span></h3>
                         <p>Hope you liked my work and blogs. Please do share your feedback with me. It helps to know
                             what people think in order to advance my career and grow a little</p>
                         <div className="app__footer__socials">

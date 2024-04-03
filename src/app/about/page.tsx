@@ -8,9 +8,9 @@ export default function About() {
                 <div className="app__about__card">
                     <header className="app__about__card__meta">
                         <Image src="https://images.pexels.com/photos/11506216/pexels-photo-11506216.jpeg" width={100}
-                               height={100} alt="Hummab&apos;s Pic" className="app__about__card__picture"/>
+                               height={100} alt="HRabbia's Pic" className="app__about__card__picture"/>
                         <div className="app__about__card__profile">
-                            <h3>Hummab <span>Rabbia</span></h3>
+                            <h3>H <span>Rabbia</span></h3>
                             <span>Cyber Security Advisor</span>
                         </div>
                     </header>
@@ -19,7 +19,7 @@ export default function About() {
 
                     <h4>Introduction</h4>
                     <p>
-                        Hey there, cyber enthusiasts! I&apos;m Hummab, diving headfirst into the captivating world of
+                        Hey there, cyber enthusiasts! I&apos;m HRabbia, diving headfirst into the captivating world of
                         cybersecurity. Imagine a world where every line of code tells a story, and each encryption is
                         like a puzzle waiting to be solved – that&apos;s my playground.
                     </p>
